@@ -28,7 +28,7 @@ static NSString *const MDCInkLayerInkColorKey = @"MDCInkLayerInkColorKey";
 static const CGFloat MDCInkLayerCommonDuration = 0.083f;
 static const CGFloat MDCInkLayerEndFadeOutDuration = 0.15f;
 static const CGFloat MDCInkLayerStartScalePositionDuration = 0.333f;
-static const CGFloat MDCInkLayerStartFadeHalfDuration = 0.167f;
+static const CGFloat MDCInkLayerStartFadeHalfDuration = 0.667f;
 static const CGFloat MDCInkLayerStartFadeHalfBeginTimeFadeOutDuration = 0.25f;
 
 static const CGFloat MDCInkLayerScaleStartMin = 0.2f;
@@ -131,7 +131,7 @@ static NSString *const MDCInkLayerScaleString = @"transform.scale";
 }
 
 - (void)setRadiiWithRect:(CGRect)rect {
-  self.initialRadius = (CGFloat)(MDCHypot(CGRectGetHeight(rect), CGRectGetWidth(rect)) / 2 * 0.6f);
+  self.initialRadius = (CGFloat)(MDCHypot(CGRectGetHeight(rect), CGRectGetWidth(rect)) / 2 * 0.4f);
   self.finalRadius = (CGFloat)(MDCHypot(CGRectGetHeight(rect), CGRectGetWidth(rect)) / 2 + 10.f);
 }
 
